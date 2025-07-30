@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digit Classifier</title>
+  </head>
+  <body>
+    <h1>Draw a digit:</h1>
+    <canvas
+      id="canvas"
+      width="280"
+      height="280"
+      style="border: 1px solid black"
+    ></canvas
+    ><br />
+    <button onclick="clearCanvas()">Clear</button>
+    <button onclick="predict()">Predict</button>
+    <p id="result">Prediction:</p>
+    <script src="{{ url_for('static', filename='drawing.js') }}"></script>
+  </body>
+</html>
